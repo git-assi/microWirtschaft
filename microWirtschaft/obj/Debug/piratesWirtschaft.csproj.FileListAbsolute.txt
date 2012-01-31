@@ -1,0 +1,29 @@
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Properties.Resources.resources
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.csproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.exe
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.pdb
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.exe
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.pdb
+C:\Dokumente und Einstellungen\i600fas\Eigene Dateien\Visual Studio 2008\Projects\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Form1.resources
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.exe
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.pdb
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.exe
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.pdb
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\ResolveAssemblyReference.cache
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Form1.resources
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Properties.Resources.resources
+I:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.csproj.GenerateResource.Cache
+F:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.exe
+F:\SourceKot\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.pdb
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.exe
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.pdb
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.exe
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\bin\Debug\piratesWirtschaft.pdb
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Form1.resources
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Properties.Resources.resources
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.frmEditor.resources
+C:\Users\Florian\Desktop\piratesWirtschaft\piratesWirtschaft\obj\Debug\piratesWirtschaft.Wiki.frmBrowser.resources

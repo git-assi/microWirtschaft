@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="piratesWirtschaft">
+</Property><Property Name="Projektmappendatei" Value="F:\SourceKot\piratesWirtschaft\piratesWirtschaft.sln">
+</Property><Property Name="Benutzeroptionendatei" Value="F:\SourceKot\piratesWirtschaft\piratesWirtschaft.suo">
+</Property><Property Name="Date" Value="Freitag, 20. Januar 2012">
+</Property><Property Name="Time" Value="18:00">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="piratesWirtschaft.sln" Description="Datei wurde erfolgreich als &quot;F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft.sln&quot; gesichert">
+</Event><Event ErrorLevel="0" Project="" Source="piratesWirtschaft.suo" Description="Datei wurde erfolgreich als &quot;F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft.suo&quot; gesichert">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\piratesWirtschaft.csproj" Description="Projektdatei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\piratesWirtschaft.csproj">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\piratesWirtschaft.csproj.user" Description="Die Projektbenutzerdatei wurde erfolgreich als &quot;F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\piratesWirtschaft.csproj.user&quot; gesichert.">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Basisklassen\clsConfigBase.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Basisklassen\clsConfigBase.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Basisklassen\clsSiedlung.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Basisklassen\clsSiedlung.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Basisklassen\clsWare.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Basisklassen\clsWare.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Basisklassen\clsWarenhaus.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Basisklassen\clsWarenhaus.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Pirates\clsConfig.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Pirates\clsConfig.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Pirates\clsSiedlungen.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Pirates\clsSiedlungen.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Form1.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Form1.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Form1.Designer.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Program.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Program.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Properties\AssemblyInfo.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Properties\Resources.Designer.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Properties\Settings.Designer.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Basisklassen\clsWelt.cs" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Basisklassen\clsWelt.cs">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Properties\Settings.settings" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Form1.resx" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Form1.resx">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\Properties\Resources.resx" Description="Datei erfolgreich gesichert als F:\SourceKot\piratesWirtschaft\Backup\piratesWirtschaft\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\piratesWirtschaft.csproj" Description="Projekt erfolgreich konvertiert">
+</Event><Event ErrorLevel="3" Project="piratesWirtschaft" Source="piratesWirtschaft\piratesWirtschaft.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="piratesWirtschaft.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="piratesWirtschaft.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="piratesWirtschaft" Source="piratesWirtschaft\piratesWirtschaft.csproj" Description="Überprüfung abgeschlossen: Upgrade der Projektdateien nicht erforderlich.">
+</Event></UpgradeLog>

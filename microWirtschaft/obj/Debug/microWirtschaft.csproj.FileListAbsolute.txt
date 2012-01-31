@@ -1,0 +1,13 @@
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.exe
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.pdb
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\bin\Debug\piratesWirtschaft.exe
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\bin\Debug\piratesWirtschaft.pdb
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.Form1.resources
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.Wiki.frmBrowser.resources
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.frmEditor.resources
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.Properties.Resources.resources
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Florian\Desktop\microWirtschaft\microWirtschaft\obj\Debug\GenerateResource.write.1.tlog
+D:\github\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.exe
+D:\github\microWirtschaft\microWirtschaft\obj\Debug\piratesWirtschaft.pdb
