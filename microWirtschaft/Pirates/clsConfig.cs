@@ -11,7 +11,10 @@ namespace piratesWirtschaft.Config
         public static clsWeltConfig WarenConfig = new clsWeltConfig();
 
         public clsWeltConfig()
-            : base(new List<string>() { "Port Royal"/*, "Tortuga"/*, "Black Beach"*/})
+            : base(new List<clsSiedlung>() { 
+            new clsSiedlung("Port Royal", 5),
+            new clsSiedlung("Tortuga", 10)
+            })
         {
             
         }
@@ -33,7 +36,7 @@ namespace piratesWirtschaft.Config
                 public clsLebensmittel()
                     : base("Lebensmittel", 1, 1.1)
                 {
-                    this.m_intMenge = 50;
+                    this.m_intMenge = 20;
                 }
             }           
             public class clsWerkzeug : clsWare
@@ -41,7 +44,7 @@ namespace piratesWirtschaft.Config
                 public clsWerkzeug()
                     : base("Werkzeug", 0.2, 0.5)
                 {
-                    this.m_intMenge = 15;
+                    this.m_intMenge = 13;
                 }
             }
             public class clsLuxusgüter : clsWare

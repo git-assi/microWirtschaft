@@ -6,13 +6,12 @@ namespace piratesWirtschaft.BasisKlassen
 {
     public abstract class clsSiedlungConfig_base
     {
-        public List<string> m_lisDefaultSiedlungsNamen;
+        public List<clsSiedlung> m_lisDefaultSiedlungen;
 
-        public clsSiedlungConfig_base(List<string> lisDefaultSiedlungsNamen)
-        {            
-            m_lisDefaultSiedlungsNamen = lisDefaultSiedlungsNamen;
+        public clsSiedlungConfig_base(List<clsSiedlung> lisDefaultSiedlungen)
+        {
+            m_lisDefaultSiedlungen = lisDefaultSiedlungen;
         }
-
 
     }
 

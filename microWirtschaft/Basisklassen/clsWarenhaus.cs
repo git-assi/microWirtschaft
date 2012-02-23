@@ -46,10 +46,6 @@ namespace piratesWirtschaft.BasisKlassen
             return lisWaren;
         }
         
-
-      
-
-       
         
         protected string inventur()
         {
@@ -58,8 +54,6 @@ namespace piratesWirtschaft.BasisKlassen
             {
                 if (aktWare.intMenge > 0)
                     strMeldung += aktWare.m_strBez + " Bestand: " + aktWare.intMenge.ToString() + Environment.NewLine;
-                if (aktWare.intBedarf != 0)
-                    strMeldung += aktWare.m_strBez + " "  + (aktWare.intBedarf > 0 ? "Überschuss" : "Bedarf") + ": " + aktWare.intBedarf.ToString() + Environment.NewLine;
             }
             return strMeldung;
         }

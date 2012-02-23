@@ -1,23 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using piratesWirtschaft.SiedlungsTypen;
 
 namespace piratesWirtschaft.BasisKlassen
 {    
-        public abstract class clsSiedlung : clsWarenhaus
+        public class clsSiedlung : clsWarenhaus
         {
+            public clsSiedlungsTyp objSiedlungsTyp;
+
             public clsSiedlung(string strName, int intEinwohner)
             {
                 m_strName = strName;
                 m_intEinwohner = intEinwohner;
+
+                objSiedlungsTyp = new clsKolonie();
+                objSiedlungsTyp.onAddGüter += new clsSiedlungsTyp.delWarenAddHandler(this.addGutByName);
+                objSiedlungsTyp.onLog += new clsSiedlungsTyp.delSingleStringHandler(this.Log );
             }
 
             private string m_strName;
-
             public string strName
             {
                 get { return m_strName; }                
             }
+
             private int m_intEinwohner = 0;
             public int intEinwohner
             {
@@ -25,16 +32,18 @@ namespace piratesWirtschaft.BasisKlassen
                 {
                     return m_intEinwohner;
                 }
+                set
+                {
+                    m_intEinwohner += value;
+                }
             }
 
-           
 
-            public void raiseTick(Welt.clsWelt sender, Welt.clsWelt.TickEventArgs e)
+            public void onTick(Welt.clsWelt sender, Welt.clsWelt.TickEventArgs e)
             {
-                this.verbraucheGüter();
+                this.verbraucheLebensmittel();
                 this.veränderePopulation();
-                this.erzeugeGüter();
-
+                this.objSiedlungsTyp.erzeugeGüter(m_intEinwohner);
             }
 
 
@@ -80,42 +89,36 @@ namespace piratesWirtschaft.BasisKlassen
             #endregion
 
             private void veränderePopulation()
-            {
-                clsWare objWare = this.getWare("Lebensmittel");
-                if (objWare.intMenge <= 0)
                 {
-                    //int intEinwohnerVerlust = 5;
-                    int intEinwohnerVerlust = Convert.ToInt32(m_intEinwohner * objWare.m_dblFaktor_Verbrauch);
-                    
-                    Log("EinwohnerVerlust: " + intEinwohnerVerlust.ToString());
-                    m_intEinwohner -= intEinwohnerVerlust;
-                }
-                else
-                {
-                    objWare = this.getWare("Werkzeug");
-
-                    if (objWare.intMenge > 0)
+                    //Nahrungsknappheit
+                    clsWare wareLebensmittel = this.getWare("Lebensmittel");
+                    if (wareLebensmittel.intBedarfDelta > 0 && wareLebensmittel.intMenge <= 0)
                     {
-                        int intMöglicheNeueEinwohner = Convert.ToInt32(objWare.m_dblFaktor_Verbrauch * objWare.intMenge);
-                        
-                        Log("MöglicheNeueEinwohner: " + intMöglicheNeueEinwohner.ToString());
-                        Log("Verbrauch Werkzeug: " + objWare.intMenge.ToString());
+                        int intEinwohnerVerlust = Convert.ToInt32(wareLebensmittel.intBedarfDelta * wareLebensmittel.m_dblFaktor_Verbrauch);
 
-                        m_intEinwohner += intMöglicheNeueEinwohner;
-                        objWare.addMenge(-objWare.intMenge);
+                        Log("EinwohnerVerlust: " + intEinwohnerVerlust.ToString());
+                        m_intEinwohner -= intEinwohnerVerlust;
                     }
-                    
+
+                    objSiedlungsTyp.möglichesWachstum(this);
                 }
-            }           
-
-            protected void verbraucheGüter()
+                     
+            protected void verbraucheLebensmittel()
             {
-                clsWare objWare = this.getWare("Lebensmittel");
-                Log("LebensmittelbedarfBedarf: " + objWare.getGesamtBeadrfByPopulation(m_intEinwohner).ToString());
-                objWare.addMenge(-objWare.getGesamtBeadrfByPopulation(m_intEinwohner));
-            }
+                clsWare objWare = this.getWare("Lebensmittel");               
+                int intGesamtVerbrauch = objWare.getGesamtBedarfByPopulation(m_intEinwohner);
+                Log("Lebensmittelverbrauch: " + intGesamtVerbrauch.ToString());
 
-            protected abstract void erzeugeGüter();
+                int intVerfügbareArbeiter = (this.intEinwohner > objSiedlungsTyp.intMaxBauern ? objSiedlungsTyp.intMaxBauern : this.intEinwohner);
+
+                int intProduzierteWaren = Convert.ToInt32(objWare.m_dblFaktor_Produktion * intVerfügbareArbeiter);
+                Log("Lebensmittelproduktion: " + intProduzierteWaren.ToString());
+
+                objWare.intBedarfDelta = intGesamtVerbrauch - intProduzierteWaren;
+                Log("Lebensmitteldelta = " + (objWare.intBedarfDelta >= 0 ? "Bedarf" : "Überschuss") + ": " + Math.Abs(objWare.intBedarfDelta).ToString());
+                
+                objWare.addMenge(- intGesamtVerbrauch + intProduzierteWaren);
+            }
 
             protected void addGutByName(string strProduktionsWare, int intAnzahlArbeiter)
             {
@@ -126,13 +129,34 @@ namespace piratesWirtschaft.BasisKlassen
                 int intProduzierteWaren = Convert.ToInt32(dblAddMenge);
                 Log("Erzeuge " + strProduktionsWare + " mit " + intAnzahlArbeiter.ToString() + " Arbeitern ergibt " + dblAddMenge.ToString());
                 
-                objWare.setBedarf(objWare.getGesamtBeadrfByPopulation(m_intEinwohner), intProduzierteWaren);
                 objWare.addMenge(intProduzierteWaren);
             }
 
             public string getInventurString()
             {
-                return m_strName + Environment.NewLine + Environment.NewLine + "Einwohner: " + m_intEinwohner.ToString() + Environment.NewLine + this.inventur();
+                return m_strName + "(" + this.objSiedlungsTyp.strTyp + ")" + Environment.NewLine + Environment.NewLine + "Einwohner: " + m_intEinwohner.ToString() + Environment.NewLine + this.inventur();
+            }
+
+            private void neuerTyp(clsSiedlung objSiedlung)
+            {
+                //if (objSiedlung.objSiedlungsTyp is clsKolonie)
+                //{
+                //    clsStadt newStadt = new clsStadt();
+                //    if (objSiedlung.intEinwohner > newStadt.intMinEinwohner)
+                //    {
+                //        Log("zur Stadt gewachsen");
+                //        objSiedlung.objSiedlungsTyp = newStadt;
+                //        objSiedlung.objSiedlungsTyp.onAddGüter += new clsSiedlungsTyp.delWarenAddHandler(RaiseOnAddGüter);
+
+                //    }
+                //}
+                //else if (objSiedlung.intEinwohner < this.intMinEinwohner)
+                //{
+                //    Log("zur Kolonie geschrumpft");
+                //    objSiedlung.objSiedlungsTyp = new clsKolonie();
+                //    objSiedlung.objSiedlungsTyp.onAddGüter += new clsSiedlungsTyp.delWarenAddHandler(RaiseOnAddGüter);
+                //}
+
             }
         }
     

@@ -8,9 +8,9 @@ namespace piratesWirtschaft.Welt
     {
         public clsWelt()
         {             
-            foreach (string strSiedlung in Config.clsWeltConfig.WarenConfig.m_lisDefaultSiedlungsNamen)
+            foreach (BasisKlassen.clsSiedlung objSiedlung in Config.clsWeltConfig.WarenConfig.m_lisDefaultSiedlungen)
             {
-                this.addSiedlung(strSiedlung);
+                this.addSiedlung(objSiedlung);
             }
 
         }                   
@@ -115,16 +115,10 @@ namespace piratesWirtschaft.Welt
 
         #region Siedlungen         
 
-            public void addSiedlung(string strName)
+            public void addSiedlung(BasisKlassen.clsSiedlung newSiedlung)
             {
-                BasisKlassen.clsSiedlung newSiedlung;
-
-                if (strName == "Port Royal")
-                    newSiedlung = new Siedlungen.clsStadt(strName);
-                else
-                    newSiedlung = new Siedlungen.clsKolonie(strName);
-
-                this.onWeltTick += new WeltTickHandler(newSiedlung.raiseTick);
+                
+                this.onWeltTick += new WeltTickHandler(newSiedlung.onTick);
 
                 this.onWeltInventur += new InventurHandler(newSiedlung.raiseInventur);
                 newSiedlung.onInventur += new piratesWirtschaft.BasisKlassen.clsSiedlung.delSingleStringHandler(newKolonie_onInventur);
@@ -141,7 +135,7 @@ namespace piratesWirtschaft.Welt
             {
                 if (onLog != null)
                 {
-                    onLog(this.datWeltzeit.ToShortDateString() + ": " + strLog);
+                    onLog(this.datWeltzeit.ToString("MMMM.yyyy") + ": " + strLog);
                 }
             }
 

@@ -1,6 +1,6 @@
 ﻿namespace piratesWirtschaft
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -49,7 +49,7 @@
             // btnInventur
             // 
             this.btnInventur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInventur.Location = new System.Drawing.Point(535, 188);
+            this.btnInventur.Location = new System.Drawing.Point(608, 188);
             this.btnInventur.Name = "btnInventur";
             this.btnInventur.Size = new System.Drawing.Size(75, 23);
             this.btnInventur.TabIndex = 1;
@@ -86,14 +86,15 @@
             this.txtStatus.Location = new System.Drawing.Point(289, 12);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(321, 170);
+            this.txtStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtStatus.Size = new System.Drawing.Size(394, 170);
             this.txtStatus.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 223);
+            this.ClientSize = new System.Drawing.Size(695, 223);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.textBox1);
@@ -102,6 +103,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

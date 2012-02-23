@@ -45,9 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basisklassen\clsConfigBase.cs" />
-    <Compile Include="Basisklassen\clsSiedlung.cs" />
+    <Compile Include="Basisklassen\_clsSiedlung.cs" />
     <Compile Include="Basisklassen\clsWare.cs" />
     <Compile Include="Basisklassen\clsWarenhaus.cs" />
+    <Compile Include="Basisklassen\clsSiedlung.cs" />
+    <Compile Include="frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wiki\frmBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,17 +69,20 @@
       <DependentUpon>frmEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Pirates\clsConfig.cs" />
-    <Compile Include="Pirates\clsSiedlungen.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Pirates\SiedlungTypes.cs" />
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wiki\frmBrowser.resx">
       <DependentUpon>frmBrowser.cs</DependentUpon>

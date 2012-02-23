@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace piratesWirtschaft
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
             //wiki = new Wiki.clsWikiInterface(false);
@@ -67,10 +67,12 @@ namespace piratesWirtschaft
         {
             try
             {
+                txtStatus.Text = Environment.NewLine + txtStatus.Text;
                
                 m_objWelt.raiseTick();
-                this.Text = m_objWelt.datWeltzeit.ToShortDateString();    
-               
+                this.Text = m_objWelt.datWeltzeit.ToShortDateString();
+
+                btnInventur_Click(sender, e);
             }
             catch (Exception ex)
             {
@@ -91,6 +93,18 @@ namespace piratesWirtschaft
             m_objWelt = new piratesWirtschaft.Welt.clsWelt();
             m_objWelt.onLog += new Welt.clsWelt.singeStringHandler(m_objWelt_onLog);
         
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox1.Text = m_objWelt.strInventur;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
